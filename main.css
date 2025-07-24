@@ -1,0 +1,193 @@
+.main-wrapper {
+  width: 1040px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px; /* Optional side spacing for mobile */
+}
+body {
+      margin: 0;
+      padding: 0;
+      font-family:'Times New Roman', Times, serif;
+    }
+
+    .hero-section {
+      position: relative;
+      width: 100%;
+      max-width: 1040px;
+      margin: auto;
+      height: 100vh;
+      background-image: url('images/watch.jpg'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      color: #000;
+    }
+
+    /* Navbar */
+    .navbar-custom {
+      position: absolute;
+      top: 30px;
+      left: 50px;
+      right: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .logo {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 4rem;
+      color: #67236f;
+    }
+
+    .nav-links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    /* Bottom quote section */
+    .quote-box {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #67236f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .quote-logo {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 2rem;
+      color: #000;
+    }
+
+    .quote-text {
+      flex: 1;
+      padding: 0 30px;
+      font-size: 1.1rem;
+    }
+
+    .call-icon {
+      background-color: #87328e;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .call-icon img {
+      width: 30px;
+      height: 30px;
+    }
+
+.custom-container {
+  width: 1040px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.image-arch {
+  width: 280px;
+  height: 280px;
+  object-fit: fill;
+  clip-path: ellipse(70% 80% at 50% 40%);
+  border-radius: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+}
+
+img {
+  margin-bottom: 10px;
+}
+/* --- GLOBAL WIDTH --- */
+:root {
+  --site-max-width: 1040px;
+}
+
+/* Reset margins if needed */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ----- PAGE 2 HERO ----- */
+.services-hero {
+  position: relative;
+  width: 100%;
+  max-width: 1040px;
+  
+  aspect-ratio: 16/6;              /* helps maintain height; adjust */
+  background-image: url("/images/2slide.jpg"); /* your hero image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* top overlay container */
+.services-hero-nav {
+  position: absolute;
+  top: 30px;              /* adjust to match screenshot */
+  left: 0;
+  width: 1040px;
+  padding: 0 5%;          /* side breathing space inside hero */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+/* logo script */
+.services-hero-logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #a347c7;         /* tweak to match purple in screenshot */
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* nav menu inline */
+.services-hero-menu {
+  display: flex;
+  gap: 40px;
+  font-size: 1.125rem;
+}
+
+/* default nav links over image */
+.services-hero-menu .nav-link-hero {
+  text-decoration: none;
+  color: #333;            /* dark gray like screenshot */
+  font-weight: 400;
+  transition: opacity 0.2s;
+}
+
+.services-hero-menu .nav-link-hero:hover {
+  opacity: 0.7;
+}
+
+/* highlight Services */
+.services-hero-menu .nav-link-hero.active {
+  font-weight: 600;
+  color: #000;
+  border-bottom: 2px solid rgba(0,0,0,0.6);  /* subtle underline */
+  padding-bottom: 2px;
+}
+
+/* page pager under hero */
+.page-pager a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.page-pager span {
+  margin: 0 6px;
+  font-weight: 600;
+}
